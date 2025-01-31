@@ -1,0 +1,20 @@
+.content {
+    margin-top: 80px; 
+    padding: 20px;
+  }
+
+:root {
+    background-color: #04232d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf2f4;
+} */

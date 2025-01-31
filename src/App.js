@@ -1,14 +1,12 @@
-
 import './App.css';
+import Layout from './components/layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-         <h1>Courses</h1>
-        
-      </header>
-    </div>
+    <Layout>
+      <h1>Courses</h1>
+      <p>Welcome to our online courses platform!</p>
+    </Layout>
   );
 }
 
