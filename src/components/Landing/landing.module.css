@@ -1,32 +1,42 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+    border: 0; /* Elimina cualquier borde predeterminado */
+}
+
 .landing {
-    height: 100vh;
-    overflow: hidden; 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    color: white;
+    justify-content: center;
+    min-height: 100vh; /* Permite que la imagen cubra todo el contenido incluyendo la navbar */
+    width: 100vw;
+    position: relative;
     text-align: center;
 }
 
 .landing::before {
     content: "";
     position: absolute;
-    top: -50px; 
+    top: 0; /* La imagen comienza desde la parte superior */
     left: 0;
     width: 100%;
-    height: 110vh; 
+    height: 100%; /* Asegura que la imagen cubra toda la altura */
     background-image: url('/public/images/landing.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+
+.landing h1, .landing p {
+    color: rgb(112, 112, 251); 
 }
 
 .landing h1 {

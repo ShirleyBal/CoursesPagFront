@@ -5,7 +5,7 @@ const Landing = () => {
     return (
         <section className={styles.landing}>
             <h1>Welcome to Our Course Platform</h1>
-            <p>Your journey to learning starts here.</p>
+            <p className={styles.subtitle}>Your journey to learning starts here.</p>
         </section>
     );
 }
