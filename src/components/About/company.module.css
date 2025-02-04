@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  padding: 40px;  /* Add space around content */
+  margin: 0;   /* Remove any external margins */
+  background-color: #000; 
+  border: none; 
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;  /* Space below the title */
+  color: #fff;  
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 20px;  
+}
+
+.reason {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.reason h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reason p {
+  font-size: 1rem;
+}
+
+p {
+  color: #3498db;
+}
