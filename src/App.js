@@ -1,12 +1,21 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout';
 import Landing from './components/Landing/landing.jsx';
+import AllCourses from './components/Courses/allcourses.jsx'; // Importa la página de todos los cursos
+import React from 'react';
+
 
 function App() {
   return (
-    <Layout>
-      <Landing />
-    </Layout>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/courses" element={<AllCourses />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
