@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Importa useNavigate
-import styles from "./courses.module.css";
+import styles from "./allCourses.module.css";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const navigate = useNavigate(); // Hook para redireccionar
 
   useEffect(() => {
-    fetch("http://localhost:3000/courses") // Ajusta la URL según tu backend
+    fetch("https://coursespagback.onrender.com/api/courses") // Ajusta la URL según tu backend
       .then((response) => response.json())
       .then((data) => {
         const recommendedCourses = data.slice(0, 3); // Solo los 3 recomendados

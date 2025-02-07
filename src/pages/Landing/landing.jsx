@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './landing.module.css';
-import Aboutcompany from '../About/aboutcompany';
+import Aboutcompany from '../../components/About/aboutcompany';
+import Courses from '../Courses/courses';
 
 const Landing = () => {
     return (
@@ -12,6 +13,9 @@ const Landing = () => {
 
             {/* La sección de "Why Choose Us?" aparece después de la landing */}
             <Aboutcompany />
+
+            {/* 🔹 Sección de Cursos Recomendados */}
+            <Courses />
         </div>
     );
 }

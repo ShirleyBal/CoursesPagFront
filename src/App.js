@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout';
-import Landing from './components/Landing/landing.jsx';
-import AllCourses from './components/Courses/allcourses.jsx'; // Importa la página de todos los cursos
+import Landing from './pages/Landing/landing.jsx';
+import AllCourses from './pages/Courses/allcourses.jsx'; // Importa la página de todos los cursos
 import React from 'react';
 
 
